@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{448F65D8-B7CF-461A-B073-D2C0157F21E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>University12</RootNamespace>
+    <AssemblyName>University12</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\TEducationLevel.cs" />
+    <Compile Include="Classes\TEvaluationResult.cs" />
+    <Compile Include="Classes\TSemester.cs" />
+    <Compile Include="Classes\TBuss.cs" />
+    <Compile Include="Classes\TDepartmentLectrure.cs" />
+    <Compile Include="Classes\TDepartments.cs" />
+    <Compile Include="Classes\TEvaluation.cs" />
+    <Compile Include="Classes\TFaculty.cs" />
+    <Compile Include="Classes\TFormOfEducation.cs" />
+    <Compile Include="Classes\TInterruptedRepeat.cs" />
+    <Compile Include="Classes\TLecture.cs" />
+    <Compile Include="Classes\TRole.cs" />
+    <Compile Include="Classes\TStudentCourse.cs" />
+    <Compile Include="Classes\TStudentSpeciality.cs" />
+    <Compile Include="Classes\TSubjectCourse.cs" />
+    <Compile Include="Classes\TSubjectSpeciality.cs" />
+    <Compile Include="Classes\TCourse.cs" />
+    <Compile Include="Classes\TSpeciality.cs" />
+    <Compile Include="Classes\TSpecialityFaculty.cs" />
+    <Compile Include="Classes\TStudent.cs" />
+    <Compile Include="Classes\TSubject.cs" />
+    <Compile Include="Classes\TUniversity.cs" />
+    <Compile Include="Classes\TUserRole.cs" />
+    <Compile Include="Classes\TUsers.cs" />
+    <Compile Include="DB\SQLDatabase.cs">
+      <DependentUpon>SQLDatabase.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddDepartment.Designer.cs">
+      <DependentUpon>FormAddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddElectiveSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddElectiveSubject.Designer.cs">
+      <DependentUpon>FormAddElectiveSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddElectiveSubjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddElectiveSubjectAdd.Designer.cs">
+      <DependentUpon>FormAddElectiveSubjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddEvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddEvaluation.Designer.cs">
+      <DependentUpon>FormAddEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddEvaluationSt_Lec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddEvaluationSt_Lec.Designer.cs">
+      <DependentUpon>FormAddEvaluationSt_Lec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddEvalutionExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddEvalutionExam.Designer.cs">
+      <DependentUpon>FormAddEvalutionExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddExam.Designer.cs">
+      <DependentUpon>FormAddExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddFaculty.Designer.cs">
+      <DependentUpon>FormAddFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddCource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddCource.Designer.cs">
+      <DependentUpon>FormAddCource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddFormOfEducations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddFormOfEducations.Designer.cs">
+      <DependentUpon>FormAddFormOfEducations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddLevelEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddLevelEducation.Designer.cs">
+      <DependentUpon>FormAddLevelEducation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddSubjectCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddSubjectCourse.Designer.cs">
+      <DependentUpon>FormAddSubjectCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddSubjects.Designer.cs">
+      <DependentUpon>FormAddSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddUsers.Designer.cs">
+      <DependentUpon>FormAddUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormDepartmentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormDepartmentInformation.Designer.cs">
+      <DependentUpon>FormDepartmentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormАddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormАddRole.Designer.cs">
+      <DependentUpon>FormАddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormАddSpecialities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormАddSpecialities.Designer.cs">
+      <DependentUpon>FormАddSpecialities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCoursеc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCoursеc.Designer.cs">
+      <DependentUpon>FormCoursеc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDepartments.Designer.cs">
+      <DependentUpon>FormDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEducationLev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEducationLev.Designer.cs">
+      <DependentUpon>FormEducationLev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormExam.Designer.cs">
+      <DependentUpon>FormExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFaculties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFaculties.Designer.cs">
+      <DependentUpon>FormFaculties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLectures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLectures.Designer.cs">
+      <DependentUpon>FormLectures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddRegistrationLecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddRegistrationLecture.Designer.cs">
+      <DependentUpon>FormAddRegistrationLecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddRegistrationStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add\FormAddRegistrationStudent.Designer.cs">
+      <DependentUpon>FormAddRegistrationStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLoginRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLoginRegistration.Designer.cs">
+      <DependentUpon>FormLoginRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSelectCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSelectCourse.Designer.cs">
+      <DependentUpon>FormSelectCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSpecialities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSpecialities.Designer.cs">
+      <DependentUpon>FormSpecialities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormStudentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStudentInformation.Designer.cs">
+      <DependentUpon>FormStudentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStudents.Designer.cs">
+      <DependentUpon>FormStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSubjects.Designer.cs">
+      <DependentUpon>FormSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUniversity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUniversity.Designer.cs">
+      <DependentUpon>FormUniversity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormЕvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormЕvaluation.Designer.cs">
+      <DependentUpon>FormЕvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFormOfEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFormOfEducation.Designer.cs">
+      <DependentUpon>FormFormOfEducation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DB\SQLDatabase.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQLDatabase.dbml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Add\FormAddCource.resx">
+      <DependentUpon>FormAddCource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddDepartment.resx">
+      <DependentUpon>FormAddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddElectiveSubject.resx">
+      <DependentUpon>FormAddElectiveSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddElectiveSubjectAdd.resx">
+      <DependentUpon>FormAddElectiveSubjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddEvaluation.resx">
+      <DependentUpon>FormAddEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddEvaluationSt_Lec.resx">
+      <DependentUpon>FormAddEvaluationSt_Lec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddEvalutionExam.resx">
+      <DependentUpon>FormAddEvalutionExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddExam.resx">
+      <DependentUpon>FormAddExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddFaculty.resx">
+      <DependentUpon>FormAddFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddFormOfEducations.resx">
+      <DependentUpon>FormAddFormOfEducations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddLevelEducation.resx">
+      <DependentUpon>FormAddLevelEducation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddSubjectCourse.resx">
+      <DependentUpon>FormAddSubjectCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddSubjects.resx">
+      <DependentUpon>FormAddSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddUsers.resx">
+      <DependentUpon>FormAddUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormDepartmentInformation.resx">
+      <DependentUpon>FormDepartmentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormАddRole.resx">
+      <DependentUpon>FormАddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormАddSpecialities.resx">
+      <DependentUpon>FormАddSpecialities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCoursеc.resx">
+      <DependentUpon>FormCoursеc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDepartments.resx">
+      <DependentUpon>FormDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEducationLev.resx">
+      <DependentUpon>FormEducationLev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormExam.resx">
+      <DependentUpon>FormExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFaculties.resx">
+      <DependentUpon>FormFaculties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLectures.resx">
+      <DependentUpon>FormLectures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddRegistrationLecture.resx">
+      <DependentUpon>FormAddRegistrationLecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add\FormAddRegistrationStudent.resx">
+      <DependentUpon>FormAddRegistrationStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLoginRegistration.resx">
+      <DependentUpon>FormLoginRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSelectCourse.resx">
+      <DependentUpon>FormSelectCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSpecialities.resx">
+      <DependentUpon>FormSpecialities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormStudentInformation.resx">
+      <DependentUpon>FormStudentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormStudents.resx">
+      <DependentUpon>FormStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSubjects.resx">
+      <DependentUpon>FormSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUniversity.resx">
+      <DependentUpon>FormUniversity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormЕvaluation.resx">
+      <DependentUpon>FormЕvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFormOfEducation.resx">
+      <DependentUpon>FormFormOfEducation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\University12.Classes.TCourse.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TDepartments.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TEducationLevel1.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TEvaluation.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TFaculty.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TFormOfEducation.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TLecture.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TSpeciality.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TStudent.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TStudentCourse.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TStudentSpeciality.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TSubject.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TSubjectCourse.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TUniversity.datasource" />
+    <None Include="Properties\DataSources\University12.Classes.TUsers.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Course.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Department.datasource" />
+    <None Include="Properties\DataSources\University12.DB.DepartmentLecture.datasource" />
+    <None Include="Properties\DataSources\University12.DB.dvStudent.datasource" />
+    <None Include="Properties\DataSources\University12.DB.dvStudentEvaluation.datasource" />
+    <None Include="Properties\DataSources\University12.DB.dvStudentInfo.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Evaluation.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Faculty.datasource" />
+    <None Include="Properties\DataSources\University12.DB.fnStudentEvaliuationResult.datasource" />
+    <None Include="Properties\DataSources\University12.DB.fnStudentsFullInformationResult.datasource" />
+    <None Include="Properties\DataSources\University12.DB.fnStudentsFullInformationStrResult.datasource" />
+    <None Include="Properties\DataSources\University12.DB.FormOfEducation.datasource" />
+    <None Include="Properties\DataSources\University12.DB.InterruptedRepeat.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Lecture.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Role.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Speciality.datasource" />
+    <None Include="Properties\DataSources\University12.DB.SpecialityFaculty.datasource" />
+    <None Include="Properties\DataSources\University12.DB.SQLDatabaseDataContext.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Student.datasource" />
+    <None Include="Properties\DataSources\University12.DB.StudentSpeciality.datasource" />
+    <None Include="Properties\DataSources\University12.DB.Subject.datasource" />
+    <None Include="Properties\DataSources\University12.DB.SubjectSpeciality.datasource" />
+    <None Include="Properties\DataSources\University12.DB.SubjectSpeciality1.datasource" />
+    <None Include="Properties\DataSources\University12.DB.University.datasource" />
+    <None Include="Properties\DataSources\University12.DB.User.datasource" />
+    <None Include="Properties\DataSources\University12.DB.UserRole.datasource" />
+    <None Include="Properties\DataSources\University12.Forms.FormLectures.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="DB\SQLDatabase.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>SQLDatabase.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB\SQLDatabase.dbml.layout">
+      <DependentUpon>SQLDatabase.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\List\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
