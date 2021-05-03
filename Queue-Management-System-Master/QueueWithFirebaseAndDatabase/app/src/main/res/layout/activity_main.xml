@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Институции"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="НАП"
+            android:textSize="15dp"
+            android:id="@+id/btnNap"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="НОИ"
+            android:id="@+id/btnNoi"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Банка"
+            android:id="@+id/btnBank"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Поликлиника"
+            android:id="@+id/btnPolyclinic"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Болница"
+            android:textSize="12dp"
+            android:id="@+id/btnHospital"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Местни данъци"
+            android:id="@+id/btnTaxes"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Община"
+            android:textSize="13dp"
+            android:id="@+id/btnMunicipality"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Пенсионно"
+            android:id="@+id/btnPension"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="КАТ"
+            android:id="@+id/btnKatPolice"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Фризьор"
+            android:textSize="11dp"
+            android:id="@+id/btnHear"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

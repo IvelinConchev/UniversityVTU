@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "524017067377",
+    "firebase_url": "https://loginformwithfirebase-ea2b5.firebaseio.com",
+    "project_id": "loginformwithfirebase-ea2b5",
+    "storage_bucket": "loginformwithfirebase-ea2b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524017067377:android:027eba270777e9886742d0",
+        "android_client_info": {
+          "package_name": "com.example.loginformwithfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524017067377-ktc1ljgti865h0eikfgosvd43l4erjba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCI869-22ZnTEUxb4wJqTkGM_ypi-z_SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524017067377-ktc1ljgti865h0eikfgosvd43l4erjba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524017067377:android:52c777800649dec16742d0",
+        "android_client_info": {
+          "package_name": "com.example.registerfirebasewithdatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524017067377-ktc1ljgti865h0eikfgosvd43l4erjba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCI869-22ZnTEUxb4wJqTkGM_ypi-z_SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524017067377-ktc1ljgti865h0eikfgosvd43l4erjba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

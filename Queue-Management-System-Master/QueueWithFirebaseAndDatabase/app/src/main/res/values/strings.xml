@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Да спестим време</string>
+
+    <string name="register_here">Нямате акаунт? Регистрирайте се<u>тук</u>!</string>
+    <string name="login_here">Ако вече имате акаунт?Влезте <u>тук</u>!</string>
+    <string name="login_first">Трябва да влезете, за да използвате тази функция!</string>
+    <string name="long_press_map">Дългото докосване на картата отваря по-подробен изглед и навигация</string>
+
+    <string-array name="facility">
+        <item>НАП</item>
+        <item>НОИ</item>
+        <item>БАНКА</item>
+        <item>ПОЛИКЛИНИКА</item>
+        <item>БОЛНИЦА</item>
+    </string-array>
+</resources>

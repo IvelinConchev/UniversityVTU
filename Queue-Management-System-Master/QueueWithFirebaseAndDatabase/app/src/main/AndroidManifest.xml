@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.registerfirebasewithdatabase">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RegisterFirebaseWithDataBase"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.FacilityInfoActivity"></activity>
+        <activity android:name=".activities.QueueDetailNoiActivity" />
+        <activity android:name=".activities.QueueDetailBankActivity" />
+        <activity android:name=".activities.TimerNoiActivity" />
+        <activity android:name=".activities.TimerNapActivity" />
+        <activity android:name=".activities.TimerActivity" />
+        <activity android:name=".activities.BankActivity" />
+        <activity android:name=".activities.BankAreaActivity" />
+        <activity android:name=".activities.BankEditActivity" />
+        <activity android:name=".activities.BankViewActivity" />
+        <activity android:name=".activities.NoiActivity" />
+        <activity android:name=".activities.NoiAreaActivity" />
+        <activity android:name=".activities.NoiEditActivity" />
+        <activity android:name=".activities.NoiViewActivity" />
+        <activity android:name=".activities.NapActivity" />
+        <activity android:name=".activities.NapAreaActivity" />
+        <activity android:name=".activities.NapEditActivity" />
+        <activity android:name=".activities.NapViewActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.LoginFacilityActivity" />
+        <activity android:name=".activities.QueueListActivity" />
+        <activity android:name=".activities.QueueDetailActivity" />
+        <activity android:name=".activities.DetailActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.ReservationsActivity" />
+        <activity android:name=".activities.FacilityListActivity" />
+        <activity android:name=".fragments.NavigationFragment" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.CaptureBankActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+        <activity android:name=".activities.CaptureNapActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+
+        <activity android:name=".activities.CaptureNoiActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+    </application>
+
+</manifest>
